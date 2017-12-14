@@ -1,0 +1,34 @@
+git add --all (--all hoặc .)
+
+git commit -m "<Message>"
+
+git push <alias> <branch_name>
+
+// Tạo kho lưu trữ local
+git init
+
+// map kho lưu trữ local và online (local repository và remote repository)
+git remote add origin https://github.com/daint2git/react-full-tutorial.git
+
+// clone (sao chep ve local)
+git clone https://github.com/daint2git/react-full-tutorial.git
+
+// Tạo mới branch
+git branch <tên branch>
+
+// Liệt kê danh sách branch hiện có
+git branch
+
+// Chuyển branch khác
+git checkout <tên branch cần chuyển qua>
+
+// Nếu bạn chưa có branch cần chuyển, bạn cũng có thể vừa tạo vừa chuyển qua chỉ với 1 lệnh
+git checkout -b <tên branch cần chuyển qua>
+
+// merge branch
+git checkout master
+git merge <tên branch>
+
+// Lấy data mới nhất về
+git pull origin <branch>
+-- git pull origin master
