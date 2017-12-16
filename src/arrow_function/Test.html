@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>arrow function</title>
+</head>
+
+<body>
+
+</body>
+<script type="text/javascript">
+
+  let arr = [2, 3, 1, 0, 5, 9, 12, 'a'];
+
+  let newArr = arr.map(e => e * 2);
+  console.log(newArr);
+
+  let nhan2 = e => e * 2;
+  console.log(arr.map(nhan2));
+
+  let add = (a, b) => a + b;
+  console.log('add(5,11) : ', add(5, 11));
+
+  let getFunction = (num) => {
+    if (num % 2 == 0)
+      return () => console.log('So duong');
+    return () => console.log('So am');
+  }
+
+  getFunction(1)();
+  getFunction(14)();
+
+  let emptyFunction = () => {};
+  console.log('emptyFunction() : ', emptyFunction());
+
+</script>
+
+</html>

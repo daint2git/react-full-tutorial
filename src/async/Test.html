@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>async</title>
+</head>
+
+<body>
+
+</body>
+<script type="text/javascript">
+  // sau 1000 mili giây thì thực thi () => {console.log('Da het 1s');}
+  setTimeout(() => {
+    console.log('Da het 1s');
+  }, 1000);
+  setTimeout(() => {
+    console.log('Da het 0s');
+  }, 0);
+  console.log('Ket thuc');
+</script>
+
+</html>
